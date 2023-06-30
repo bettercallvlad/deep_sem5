@@ -4,3 +4,11 @@
 # * первое число является значением для первого ключа
 # * четвертое и все возможные последующие числа хранятся
 # в кортеже как значения второго ключа
+
+first, second, third, *other = map(int, input().split('/'))
+other = tuple(other)
+my_dict = {
+    second: first,
+    third: other
+}
+print(my_dict)
